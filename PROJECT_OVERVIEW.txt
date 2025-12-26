@@ -1,0 +1,76 @@
+思考的延伸 - 智能阅读与思考记录系统
+=====================================
+
+项目结构：
+---------
+
+核心页面：
+  src/pages/ReadingPage.tsx - 主阅读页面，包含所有核心交互逻辑
+
+核心组件：
+  src/components/ThoughtSticky.tsx - 思考输入便签
+  src/components/ThoughtPreview.tsx - 思考预览浮窗
+  src/components/ThoughtNetwork.tsx - 思维网络视图
+  src/components/NetworkEntryButton.tsx - 网络入口按钮
+
+数据层：
+  src/db/api.ts - 数据库 API 封装
+  src/db/supabase.ts - Supabase 客户端
+  src/types/types.ts - TypeScript 类型定义
+
+数据库：
+  supabase/migrations/00001_create_thoughts_and_articles_tables.sql
+  - articles 表：存储文章
+  - thoughts 表：存储思考记录
+
+样式系统：
+  src/index.css - Apple Design Language 设计系统
+  - 日间/夜间模式
+  - 毛玻璃效果
+  - 动画系统
+
+核心功能：
+---------
+
+1. 文本选择与思考记录
+   - 选择文本（≥3字符）触发记录
+   - 智能定位便签位置
+   - 自动保存机制
+
+2. 思考查看与编辑
+   - 悬停预览
+   - 点击编辑
+   - 波浪线标记
+
+3. 思维网络
+   - 全局视图
+   - 卡片展示
+   - 定位跳转
+
+4. 键盘快捷键
+   - ESC: 关闭
+   - Ctrl+Shift+N: 切换网络
+   - Ctrl+D: 切换模式
+   - Ctrl+Enter: 保存
+
+5. 移动端适配
+   - 触摸优化
+   - 防误触
+   - 响应式布局
+
+技术栈：
+-------
+- React + TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Supabase
+- date-fns
+- Vite
+
+设计特点：
+---------
+- Apple Design Language
+- 毛玻璃效果
+- 流畅动画
+- 极简美学
+- 高对比度
