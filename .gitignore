@@ -20,6 +20,7 @@ package-lock.json
 .idea
 .DS_Store
 .env
+.env.*
 *.suo
 *.ntvs*
 *.njsproj
