@@ -239,7 +239,7 @@ export default function ArticlesPage() {
               />
               <button
                 onClick={handleAddCategory}
-                className="h-5 w-5 rounded flex items-center justify-center text-primary hover:bg-primary/10 transition-colors"
+                className="h-5 w-5 rounded flex hidden items-center justify-center text-primary hover:bg-primary/10 transition-colors"
               >
                 <Check className="h-3.5 w-3.5" />
               </button>
@@ -248,7 +248,7 @@ export default function ArticlesPage() {
                   setIsAddingCategory(false);
                   setNewCategoryName("");
                 }}
-                className="h-5 w-5 rounded flex items-center justify-center text-muted-foreground hover:bg-muted/50 transition-colors"
+                className="h-5 w-5 rounded flex hidden items-center justify-center text-muted-foreground hover:bg-muted/50 transition-colors"
               >
                 <X className="h-3.5 w-3.5" />
               </button>
